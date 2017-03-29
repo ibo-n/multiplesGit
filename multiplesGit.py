@@ -1,7 +1,9 @@
-userNumber = input("Tell me a number to double ") 
+userNumber = input("Tell me a number ") 
 
 userNumber = int(userNumber)
 
-doubleNumber = userNumber * 2 
-
-print("Double {} is {} ".format(userNumber, doubleNumber))
+multiplier = 1
+while multiplier < 11:
+	multiple = userNumber * multiplier 
+	print("{} times {} equals {}".format(userNumber, multiplier, multiple))
+	multiplier += 1
